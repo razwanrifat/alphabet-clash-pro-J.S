@@ -18,6 +18,40 @@ function setAlphabetColourByElementID(belementId) {
     
 }
 
+function removeAlphabetColourByElementID(belementId) {
+    let belementIds=document.getElementById(belementId)
+    belementIds.classList.remove('bg-orange-400')
+   console.log(' removeAlphabetColourByElementID is clicked')
+   
+}
+
+
+function getTextEllementById(elementId) {
+    let elementIdS=document.getElementById(elementId)
+    const elementIdSText= elementIdS.innerText
+    const element= parseInt(elementIdSText)
+    console.log('getTextEllementById : ',element);
+    
+    return element
+    
+}
+
+function setTextEllementById(elementId,value) {
+    let element=document.getElementById(elementId)
+    element.innerText= value;
+
+}
+
+
+function getElementTextByID(elementId) {
+    let elementIdS=document.getElementById(elementId)
+    const elementIdSText= elementIdS.innerText
+    return elementIdSText;
+
+}
+
+
+
 function getAlphabet() {
     const alphabetString="abcdefghijklmnopqrstuvwxyz"; // ekhon String er moto kore Aschey.
     const alphabets=alphabetString.split('')   // ekhon arry er moto kore Aschey.

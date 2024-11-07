@@ -80,14 +80,18 @@
         
                     <button class="btn bg-purple-400">
                         Life
-                        <img src="images/heartEmogi.svg" alt="">1
+                        <img src="images/heartEmogi.svg" alt=""> <span id="currentLife" >5 </span> 
                       </button>
     
                 
                     <button class="btn bg-purple-400">
                         Score
-                        <img src="images/dollar.svg" alt="">1
+                        <img src="images/dollar.svg" alt="">  <span id="currentScore"> 0 </span> 
                       </button>
+
+                    <button onclick="gameOver()" id="exitButton" class="btn bg-purple-400">Exit or Press ESC</button>
+
+                      
                   
             </div>
 
@@ -96,8 +100,8 @@
         <!--Score screen Section-->
         <section id="scoreScreen" class="flex justify-center items-center min-h-screen hidden">
             <div class="bg-[#FFFFFF33] text-center p-3 space-y-2 ">
-                <h1 class="text-6xl text-white font-bold"> Score : 14</h1>
-                <button class="btn btn-warning w-32">Play Again</button>
+                <h1 class="text-6xl text-white font-bold"> <span>Score :</span>  <span id="lastScore">14</span> </h1>
+                <button onclick="play()" id="playAgain" class="btn btn-warning w-32">Play Again</button>
                 <p class="text-white">Practice will make you Pro</p>
             </div>
         </section>
